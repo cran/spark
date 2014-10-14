@@ -1,0 +1,16 @@
+a04df97ffe850817740f9699e0b27ae7 *DESCRIPTION
+3d55ef9a10c04c95a867277c02d32bca *LICENSE
+413108309b074bf62a042f4796d242e5 *NAMESPACE
+5b6aa37666daef36c6109c66348dad7e *R/matrices.r
+93e100df3a0f98875311b9119490bb51 *R/pretty-package.r
+8c49779030069343cc987bff5b6d19d3 *R/scale.r
+2082db84f0f02ec41932d4790264206e *R/spark.r
+92902f919effc32263c4a331d2af7473 *R/sparklines.r
+76d775830292f47725fe174459085e70 *R/utils.r
+6ec771c2a1513bc943739884218c108f *README.md
+e16b120e6b4191c809fc97a47ffc8c65 *man/spark.Rd
+0a6b4122c8c6a7de79ed3ebd1ad5ea41 *man/spark.default.Rd
+2890e200a53f22646f9c1529198c6995 *man/spark.matrix.Rd
+f2f5812bf7ec673dbf4e2896d460e2a1 *man/sparklines.Rd
+0355043a02b3a8f012bbee86b006053d *tests/testthat.R
+9b51894d3290af642acec71662bd51b4 *tests/testthat/test-spark.r
