@@ -19,17 +19,13 @@
 #' spark(t(EuStockMarkets), width="auto", common_scale = FALSE)
 
 spark.matrix <- function(data, width = c("data", "auto", "screen"),
-                         print = TRUE, common_scale = TRUE, ...) {
+                         common_scale = TRUE, ...) {
 
-  if (common_scale) data <- t(apply(data, 1, scale_y, range = range(data)))
+  if (!is.numeric(width)) width <- match.arg(width)
 
-  res <- apply(data, 1, spark, width = width, print = FALSE, ...)
+  range <- if (common_scale) range(data) else NULL
+  res <- apply(data, 1, spark, width = width, range = range, ...)
 
-  if (print) {
-    cat(res, sep = "\n")
-    invisible(res)
-  } else {
-    res
-  }
-
+  class(res) <- unique(c("sparkline", class(res), "character"))
+  res
 }
